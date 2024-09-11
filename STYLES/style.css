@@ -50,6 +50,11 @@ header .logo{
     color: var(--text-prime);
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
 .logo h3{
     font-size: 2rem;
 }

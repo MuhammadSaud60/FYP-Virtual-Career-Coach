@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --header-prime: #01257D;
     --bg-prime: #ffffe4;
@@ -17,7 +18,6 @@ html,body{
     background-color: var(--bg-prime);
     min-height: 100vh;
 }
-
 
 header{
     width: 100%;
@@ -199,43 +199,40 @@ header .navIcon{
 }
 
 
-/* form */
-form{
+.container{
     width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
     justify-content: center;
     align-items: center;
 }
-form h2{
-    margin: 1em 0;
-    font-size: 2rem;
-    color: var(--secondary-bg);
-}
 
-.container{
-    width: 80%;
+form{
+    width: 600px;
+    max-width: 80%;
     display: flex;
-    justify-content: center;
-}
-
-.user-data{
-    width: 50%;
-    display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 20px;
 }
 
-.user-data label{
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 500;
+form h3{
+    font-size: 2rem;
+    color: var(--header-prime);
 }
 
-.user-data input,select{
+.userInfo{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.userInfo input{
+    width: 100%;
     width: 100%;
     height: 40px;
     margin: 1em 0;
@@ -246,53 +243,23 @@ form h2{
     outline: none;
 }
 
-.user-data select{
-    border: none;
-    background-color: var(--header-prime);
-    color: var(--text-prime);
-    padding: 0 10px;
-}
-
-.user-data input:focus{
+input:focus{
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.user-data .actionBtn{
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 1em 0;
+.userInfo label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-.user-data button{
+form button{
     width: 30%;
     height: 35px;
- 
     border: none;
     background-color: var(--header-prime);
     color: var(--text-prime);
     border-radius: 6px;
     font-size: 1.1rem;
     cursor: pointer;
-}
-
-.user-data textarea{
-    width: 100%;
-    height: 50vh;
-    resize: none;
-    padding: 10px 0 0 10px;
-    border-radius: 10px;
-    margin: 1em 0;
-}
-
-
-
-.user-data.active{
-    display: flex;
-}
-
-.disable{
-    display: none;
-    cursor: not-allowed;
 }

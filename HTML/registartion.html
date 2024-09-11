@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/STYLES/registartion.css">
     <link rel="shortcut icon" href="/Images/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ 
     <title>Create Account</title>
 </head>
 <body>
@@ -16,7 +16,9 @@
      </div>
      <div class="left">
        <div class="logo">
+        <a href="/index.html">
          <h3>VCC</h3>
+         </a>
          
        </div>
        <ul class="links">
@@ -36,7 +38,7 @@
      <i class="fa fa-user-plus accountIcon" aria-hidden="true"></i>
      <nav>
        <ul class="accountLinks">
-         <li><a href="#">Login</a></li>
+         <li><a href="loginToVCC.html">Login</a></li>
          <li><button class="registar-btn">Register</button></li>
        </ul>
      </nav>
@@ -59,7 +61,7 @@
             <input type="email" id="userEmail" placeholder="Your email address" required>
             <label for="gender">Gender</label>
             <select name="gender" id="gender" required>
-                <option value="" disabled selected>Select Your Gender</option>
+                <option value="NA" selected>Select Your Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
@@ -82,7 +84,7 @@
         <div class="user-data step">
             <label for="userEducation">Select Your Qualification</label>
             <select id="userEducation" name="qualification" required>
-                <option value="" disabled selected>Select your qualification</option>
+                <option value="NA" disabled selected>Select your qualification</option>
                 <option value="highschool">High School</option>
                 <option value="diploma">Diploma</option>
                 <option value="bachelors">Bachelor's Degree</option>
@@ -93,6 +95,7 @@
             <label for="userCountry">Country</label> 
         
             <select id="userCountry" name="country" class="form-control" required>
+                <option value="NA">Select Your Country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -367,6 +370,6 @@
 
    </form>
     
-   <script src="/SCRIPTS/registartionform.script.js"></script>
+   <script src="/SCRIPTS/registartionform.js"></script>
 </body>
 </html>

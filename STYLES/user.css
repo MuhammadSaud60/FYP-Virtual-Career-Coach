@@ -199,100 +199,101 @@ header .navIcon{
 }
 
 
-/* form */
-form{
+main{
     width: 100%;
+    max-width: 80%;
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
     justify-content: center;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+.userData{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto-fit;
+    box-shadow: 0 4px 2px 3px #111439;
+    gap: 20px;
+
+}
+
+.personal{
+    width: 100%;
+    height: 15vh;
+    background-color: #111439;
+    color: var(--text-prime);
+    padding: 10px;
+    display: flex;
     align-items: center;
-}
-form h2{
-    margin: 1em 0;
-    font-size: 2rem;
-    color: var(--secondary-bg);
+    justify-content: space-around;
 }
 
-.container{
-    width: 80%;
-    display: flex;
-    justify-content: center;
+.aboutUser{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
 }
 
-.user-data{
-    width: 50%;
-    display: none;
-    flex-direction: column;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 20px;
+.aboutUser h3{
+    color: var(--header-prime);
+    margin: .5em 0;
 }
 
-.user-data label{
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.user-data input,select{
+.education{
     width: 100%;
-    height: 40px;
-    margin: 1em 0;
+    height: 100%;
     padding-left: 10px;
-    border: 1px solid #333;
-    border-radius: 6px;
-    font-size: 1rem;   
-    outline: none;
 }
 
-.user-data select{
-    border: none;
-    background-color: var(--header-prime);
-    color: var(--text-prime);
-    padding: 0 10px;
+.skills{
+    width: 100%;
+    grid-column: 1/ span 1;
+    padding-left: 10px;
 }
 
-.user-data input:focus{
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+.skills ul{
+    margin-left: 20px;
 }
 
-.user-data .actionBtn{
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 1em 0;
+.interest{
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-template-columns: 3;
+    padding-left: 10px;
 }
 
-.user-data button{
-    width: 30%;
+.avaJobs{
+    width: 100%;
+    grid-column: 1 / span 3;
+    padding-left: 10px;
+    border-top: 1px solid var(--header-prime);
+}
+
+main .fa-edit{
+    width: 35px;
     height: 35px;
- 
-    border: none;
+    position: absolute;
+    right: 20px;
+    top: 0;
     background-color: var(--header-prime);
-    color: var(--text-prime);
-    border-radius: 6px;
-    font-size: 1.1rem;
+    color: var(--bg-prime);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px var(--secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.user-data textarea{
-    width: 100%;
-    height: 50vh;
-    resize: none;
-    padding: 10px 0 0 10px;
-    border-radius: 10px;
+.Message{
+    color: black;
+    text-align: center;
+    opacity: .5;
     margin: 1em 0;
-}
-
-
-
-.user-data.active{
-    display: flex;
-}
-
-.disable{
-    display: none;
-    cursor: not-allowed;
+    text-transform: uppercase;
 }
